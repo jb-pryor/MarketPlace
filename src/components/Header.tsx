@@ -1,14 +1,17 @@
 //imports
 import './Header.css'
+import { useNavigate } from "react-router-dom";
 
 function Header() {
+
+  const navigate = useNavigate();
 
   return (
     <>
       <div className='header-bar'>
         <p>Logo</p>
         <p>StoreName</p>
-        <p>SignIn</p>
+        <button onClick={() => navigate("/Login")}>SignIn</button>
       </div>
     </>
   );

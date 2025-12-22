@@ -1,12 +1,16 @@
 //imports
 import './Header2.css'
 
-function Header2() {
+type HeaderProps = {
+  onMenuClick: () => void;
+};
+
+function Header2({ onMenuClick }: HeaderProps) {
   return (
     <>
       <div className="header-bar-2">
         <p>SearchBar</p>
-        <p>ShopCart</p>
+        <button onClick={onMenuClick}>ShopCart</button>
       </div>
     </>
   );
