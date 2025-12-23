@@ -2,8 +2,9 @@
   padding: .5rem;
   background-color: rgb(0, 0, 0, .09);
   border-radius: 12px;
-  width: fit-content;
-  max-width: 250px;
+  width: 20vw;
+  height: 20vh;
+  max-width: 400px;
   display: flex;
   flex-direction: column; /* stack image/text row and button */
   box-shadow: 400px 400px 0px rgba(0, 0, 0, 0.1);

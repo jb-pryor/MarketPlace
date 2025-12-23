@@ -11,7 +11,7 @@ function Header() {
       <div className='header-bar'>
         <p>Logo</p>
         <p>StoreName</p>
-        <button onClick={() => navigate("/Login")}>SignIn</button>
+        <button onClick={() => navigate("/Signin")}>SignIn</button>
       </div>
     </>
   );
