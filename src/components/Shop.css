@@ -7,21 +7,25 @@
   max-width: 400px;
   display: flex;
   flex-direction: column; /* stack image/text row and button */
-  box-shadow: 400px 400px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
   gap: 10px;
   margin: 1.2rem;
 }
 
 .shop-box:hover {
 
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0);
   transition: all ease 0.9s;
 }
 
 .img {
-  width: 85px;
+  width: 120px;
   background-color: white;
-  height: 85px;
+  height: 120px;
+}
+
+img {
+  width: 100px;
+  height: 100px;
 }
 
 .flex-box {
@@ -41,4 +45,11 @@ button:hover {
 
 button:active {
   background-color: rgb(127, 89, 55);
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
 }

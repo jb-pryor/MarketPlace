@@ -5,6 +5,8 @@ type Item = {
   id: number;
   name: string;
   price: number;
+  image: string;
+  supply: number;
 };
 
 import { useEffect, useState } from 'react';
@@ -38,12 +40,21 @@ function Shop() {
 
   return (
     <>
+    <div className='flex'>
       {items.map(item => (
-        <div key={item.id}>
-          <p>{item.name}</p>
-          <p>${item.price}</p>
+        <div className='shop-box' key={item.id}>
+          <div className='flex-box'>
+            <img src={`/assets/${item.image}`} alt={item.name} />
+            <div>
+              <p>{item.name}</p>
+              <p>${item.price}</p>
+              <p>Stock: {item.supply}</p>
+            </div>
+          </div>
+          <button>Add to Cart</button>
         </div>
       ))}
+    </div>
     </>
   );
 }
