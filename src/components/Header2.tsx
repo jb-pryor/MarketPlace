@@ -11,11 +11,13 @@ type HeaderProps = {
 };
 
 function Header2({ onMenuClick }: HeaderProps) {
+
+
   return (
     <>
       <div className="header-bar-2">
         <div><FaSearch /><input type="text" /></div>
-        <button onClick={onMenuClick}><FaShoppingCart size={16}/></button>
+        <button onClick={onMenuClick}><FaShoppingCart size={18}/></button>
       </div>
     </>
   );

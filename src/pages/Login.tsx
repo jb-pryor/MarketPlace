@@ -10,7 +10,7 @@ function Login() {
 
   return (
     <>
-      <button onClick={() => navigate("/Home")}>Back to Home</button>
+      <button className="btn" onClick={() => navigate("/Home")}>Back to Home</button>
       <div className="login-container">
         <div className="login-card">
           <h2>Login</h2>

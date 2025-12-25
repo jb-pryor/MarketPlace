@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(207, 247, 207);
+  background-color: #94B4C1;
 }
 
 /* Card */
@@ -44,9 +44,35 @@
   font-size: 1rem;
   cursor: pointer;
   color: white;
+  background-color: #213448;
+}
+
+.btn{
+
+  background-color: #213448;
+  color: white;
+  border-radius: 12px;
+
+}
+
+.btn:hover {
+
+  background-color: #35506d;
+}
+
+.btn:active {
+
+  background-color: #19293b;
 }
 
 .login-card button:hover {
+
+  background-color: #35506d;
+}
+
+.login-card button:active {
+
+  background-color: #19293b;
 }
 
 /* Link */

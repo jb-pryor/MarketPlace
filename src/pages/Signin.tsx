@@ -10,6 +10,9 @@ import { useNavigate } from "react-router-dom";
 
 import { useEffect, useState } from 'react';
 
+import { useUser } from "../context/UserContext";
+
+
 function Signin() {
 
   //const [users, setUsers] = useState<User[]>([]);
@@ -22,10 +25,14 @@ function Signin() {
 
   const navigate = useNavigate();
 
+  const { setUser } = useUser();
+
   //add useStates right here
   const [email, setEmail] = useState("");
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+
+
 
   const handleSignup = async () => {
     const newUser = {
@@ -43,9 +50,14 @@ function Signin() {
         body: JSON.stringify(newUser)
       });
   
-      if (!res.ok) {
+      /*if (!res.ok) {
         throw new Error("Failed to create user");
-      }
+      }*/
+
+
+      //sets user to updated user
+      setUser(username);
+      //console.log(username);
   
       // optional: redirect after success
       navigate("/Home");

@@ -13,23 +13,6 @@ import { useEffect, useState } from 'react';
 
 function Shop() {
 
-  /* 
-  
-  <div className="shop-box">
-        <div className='flex-box'>
-          <div className='row1'>
-            <div className="img"></div>
-          </div>
-          <div className='row2'>
-            <p>ThisIsAFakeName</p>
-            <p>Price</p>
-          </div>
-        </div>
-        <button>Add to cart</button>
-      </div>
-  
-  */
-
   const [items, setItems] = useState<Item[]>([]);
 
   useEffect(() => {
@@ -45,7 +28,7 @@ function Shop() {
         <div className='shop-box' key={item.id}>
           <div className='flex-box'>
             <img src={`/assets/${item.image}`} alt={item.name} />
-            <div>
+            <div className='text-sec'>
               <p>{item.name}</p>
               <p>${item.price}</p>
               <p>Stock: {item.supply}</p>

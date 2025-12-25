@@ -1,5 +1,5 @@
 .header-bar-2{
-  background-color: rgb(188, 140, 97);
+  background-color: #EAE0CF;
   display: flex;
   flex-direction: row;
   text-align: center;
@@ -12,4 +12,11 @@
 .header-bar-2 p {
 
   margin-right: 0%;
+}
+
+.header-bar-2 button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
 }
